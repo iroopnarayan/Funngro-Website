@@ -1,0 +1,207 @@
+/* Updated styles.css */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00aaff;
+  text-transform: uppercase;
+  float: left;
+  cursor: pointer;
+  animation: fadeIn 1s;
+}
+
+header nav ul {
+  list-style: none;
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #00aaff;
+}
+
+.cta-btn {
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #0077cc;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 170, 255, 0.8), rgba(0, 170, 255, 0.8)),
+    url("https://via.placeholder.com/1920x1080");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  animation: slideIn 1s;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px 0;
+  background: #fff;
+  transition: background-color 0.3s;
+}
+
+.section:hover {
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: fadeIn 1s;
+}
+
+ol,
+ul {
+  margin-left: 20px;
+  font-size: 18px;
+  animation: fadeIn 1s;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex > div {
+  width: 48%;
+  animation: zoomIn 1s;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
